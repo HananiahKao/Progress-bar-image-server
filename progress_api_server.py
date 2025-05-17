@@ -1,8 +1,19 @@
 from flask import Flask, request, send_file
 from io import BytesIO
 from html_to_image import html_to_png
+from requests import get
 
 app = Flask(__name__)
+
+@app.route("/")
+def root():
+    print("wecome Home!")
+
+@app.route("/health-check")
+def health():
+    print("I am still alive!")
+    get('https://progerss-bar-provider.onrender.com')
+
 
 @app.route("/progress-image")
 def progress_image():
