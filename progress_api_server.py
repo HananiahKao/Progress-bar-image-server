@@ -8,11 +8,12 @@ app = Flask(__name__)
 @app.route("/")
 def root():
     print("wecome Home!")
-
+    return "", 200
 @app.route("/health-check")
 def health():
     print("I am still alive!")
     get('https://progerss-bar-provider.onrender.com')
+    return "", 200
 
 
 @app.route("/progress-image")
