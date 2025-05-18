@@ -1,4 +1,4 @@
 flask
-playwright
 requests
 gunicorn
+pillow
