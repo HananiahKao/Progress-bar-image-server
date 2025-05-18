@@ -44,7 +44,7 @@ def progress_svg():
     # SVG content
     svg = f"""<?xml version="1.0" encoding="UTF-8"?>
 <svg width="{total_width}" height="30" xmlns="http://www.w3.org/2000/svg">
-  <rect width="{total_width}" height="30" fill="{bg_color}" />
+  <rect width="{total_width}" height="30" fill="transparent" />
   <g transform="translate(20,12)">
     <rect rx="{bar_height/2}" ry="{bar_height/2}" width="{bar_width}" height="{bar_height}" fill="{bar_bg_color}" />
     <rect rx="{bar_height/2}" ry="{bar_height/2}" width="{progress_width}" height="{bar_height}" fill="{bar_fill_color}" />
